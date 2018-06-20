@@ -2,7 +2,13 @@
     text-align: center;
     margin: auto;
     position: relative;
-    transform: translateY(+100%);
+    top: 20%;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
 
 [type="text"] {
@@ -10,6 +16,11 @@
     height: 2rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    box-shadow: 2px 2px 5px grey;
+}
+
+[type="text"]:hover {
+    box-shadow: 5px 5px 5px grey;
 }
 
 button {
@@ -28,7 +39,7 @@ a:hover {
 
 ul {
     list-style-type: none;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     margin-bottom: 1rem;
     padding: 0;
 }
@@ -39,11 +50,11 @@ li {
     font-size: 14px;
 }
 
-.leftTop {
+.left {
     float: left;
 }
 
-.rightTop {
+.right {
     float: right;
 }
 
@@ -60,4 +71,12 @@ li {
     margin-left: auto;
     margin-right: auto;
     clear: both;
+}
+
+.footer {
+    position: relative;
+    top: 63%;
+    margin-bottom: 1rem;
+    background-color: rgb(236, 230, 230);
+    overflow: auto;
 }
